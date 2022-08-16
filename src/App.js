@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="px-10">
       <Navbar />
       <Header />
       <About  />
