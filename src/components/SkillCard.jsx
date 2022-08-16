@@ -1,8 +1,11 @@
 import React from 'react'
 
-function SkillCard() {
+function SkillCard(props) {
   return (
-    <div>SkillCard</div>
+    <div>
+      <div>{props.name}</div>
+      <div>{props.summary}</div>
+    </div>
   )
 }
 

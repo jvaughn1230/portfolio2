@@ -1,14 +1,22 @@
 import React from 'react'
 
-import SkillCard from '../components/SkillCard'
+import SkillCard from '../components/SkillCard';
+import skillData from '../data/skillsData';
 
-function Skills() {
-  return (
-    <div id='skills'>
-       <SkillCard /> 
-    </div>
-    
-  )
+console.log(skillData);
+
+const createSkillCard = (skill) => {
+  return <SkillCard
+    key={skill.id} 
+    name={skill.name}
+    summary={skill.summary}
+  />
 }
 
-export default Skills
+const Skills = () => {
+  <div>
+    {skillData.map(createSkillCard)}
+  </div>
+}
+
+export default Skills;
