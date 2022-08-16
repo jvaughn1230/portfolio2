@@ -2,7 +2,11 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div>
+      {/* socials - GH, LI (maybe) */}
+      {/* copyright */}
+      {/* Email Me */}
+    </div>
   )
 }
 
