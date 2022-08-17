@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-function ProjectCard() {
+function ProjectCard({project}) {
+  const {title, subTitle } = project;
   return (
-    <div>ProjectCard</div>
+    <div>
+      <div>{title}</div>
+      <div>{subTitle}</div>
+    </div>
   )
 }
 
-export default ProjectCard
+export default ProjectCard;
