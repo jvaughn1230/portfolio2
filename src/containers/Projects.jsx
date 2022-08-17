@@ -1,11 +1,11 @@
 import React from 'react'
 
-import ProjectCard from '../components/ProjectCard'
+import ProjectsList from '../components/ProjectsList';
 
 function Projects() {
   return (
     <div id='projects'>
-        <ProjectCard />
+        <ProjectsList />
     </div>
   )
 }
