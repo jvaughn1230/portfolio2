@@ -6,16 +6,19 @@ import projectsData from '../data/projectsData';
 console.log(projectsData);
 
 function newProjectCard(project){
-  <ProjectCard 
+  return(
+     <ProjectCard 
     key={project.id}
     title={project.title}
     subTitle={project.subTitle}
-  />
+    />
+  );
+ 
 }
 
 function ProjectsList() {
   return (
-    <div>
+    <div className='flex'>
         {projectsData.map(newProjectCard)}
     </div>
   )

@@ -1,8 +1,12 @@
 import React from 'react'
 
+import Mailer from '../components/Mailer';
+
 function Contact() {
   return (
-    <div id='contact'>Contact</div>
+    <div id='contact'>
+      <Mailer />
+    </div>
   )
 }
 
