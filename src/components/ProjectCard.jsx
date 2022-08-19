@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ProjectCard(props) {
-  // const {title, subTitle } = project;
+  
   return (
     <div>
       <div>{props.title}</div>
