@@ -1,6 +1,5 @@
 import './App.css';
 
-import Navbar from './components/Navbar';
 import Header from './containers/Header';
 import About from './containers/About';
 import Skills from './containers/Skills';
@@ -10,8 +9,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="px-10">
-      <Navbar />
+    <div>
       <Header />
       <About  />
       <Skills />

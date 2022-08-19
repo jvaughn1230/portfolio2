@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'ocean': '#15A1A9',
+        'light': 'rgba(255, 255, 255, 0.7)',
       } 
     },
   },

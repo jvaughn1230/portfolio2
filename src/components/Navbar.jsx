@@ -5,12 +5,24 @@ import {AiFillCloseCircle} from 'react-icons/ai';
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [color, setColor] = useState(false);
 
+  const changeColor = () => {
+    if(window.scrollY >=20){
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  }
+
+  window.addEventListener('scroll', changeColor)
+  
   return (
-    <nav className='flex py-5 justify-between content-center'>
-        <div className='p4'>Logo</div>
+    <div className={`fixed px-10 py-5 w-full text-light mx-auto ${color && 'bg-white'} ${color && 'text-black'}`}>
+        <nav className='flex justify-between content-center'>
+        <div className='p4 font-bold text-xl'>Logo</div>
 
-        <div className='hidden md:inline'>
+        <div className='hidden md:inline text-sm font-bold'>
             <a className='p-4' href='#skills'>Skills</a>
             <a className='p-4' href='#projects'>Projects</a>
             <a className='p-4' href='#contact'>Contact</a>
@@ -31,6 +43,8 @@ function Navbar() {
             
         </div>
     </nav>
+    </div>
+
   )
 }
 
