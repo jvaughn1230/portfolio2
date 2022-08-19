@@ -1,11 +1,11 @@
 import React from 'react';
 
-function ProjectCard({project}) {
-  const {title, subTitle } = project;
+function ProjectCard(props) {
+  // const {title, subTitle } = project;
   return (
     <div>
-      <div>{title}</div>
-      <div>{subTitle}</div>
+      <div>{props.title}</div>
+      <div>{props.subTitle}</div>
     </div>
   )
 }
