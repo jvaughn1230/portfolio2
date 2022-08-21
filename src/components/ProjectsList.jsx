@@ -18,7 +18,7 @@ function newProjectCard(project){
 
 function ProjectsList() {
   return (
-    <div className='flex'>
+    <div className='flex flex-wrap space-between'>
         {projectsData.map(newProjectCard)}
     </div>
   )

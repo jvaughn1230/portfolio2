@@ -16,7 +16,7 @@ function newSkillCard(newSkill){
 
 function SkillList(){
   return(
-    <div className='flex justify-between'>
+    <div className='flex flex-wrap space-between'>
       {skillData.map(newSkillCard)}
     </div>
   );
