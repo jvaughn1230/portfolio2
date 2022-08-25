@@ -2,16 +2,20 @@ import React from 'react';
 
 import ProjectCard from './ProjectCard';
 import projectsData from '../data/projectsData';
+import Modal from './Modal';
 
 console.log(projectsData);
 
 function newProjectCard(project){
   return(
-     <ProjectCard 
-    key={project.id}
-    title={project.title}
-    subTitle={project.subTitle}
-    />
+    <div>
+       <ProjectCard 
+        key={project.id}
+        title={project.title}
+        subTitle={project.subTitle}
+        />
+    </div>
+    
   );
  
 }

@@ -49,20 +49,11 @@ const Mailer = () => {
     return(
         <div>
             {status && alert()}
-            <h1>Contact Form</h1>
-            <form onSubmit={handleSubmit} ref={form}>
-
-                <label>Name: </label>
-                <input type='text' name='name' value={values.name} onChange={handleChange} placeholder='Enter Your Name'  required/>
-            
-                <label>Email:</label>
-                <input type='email' name='email' value={values.email} onChange={handleChange} placeholder='Enter Your Email' required/>
-
-                <label>Message</label>
-                <textarea name='message' value={values.message} onChange={handleChange} rows='4' required />
-
+            <form onSubmit={handleSubmit} ref={form} className='flex flex-col w-full'>
+                <input type='text' name='name' value={values.name} onChange={handleChange} placeholder='Full Name' required className='w-full' />   
+                <input type='email' name='email' value={values.email} onChange={handleChange} placeholder='Email' required />   
+                <textarea name='message' value={values.message} onChange={handleChange} rows='4'  placeholder='Your Message' required />  
                 <input type='submit' value='Send' /> 
-
             </form>
         </div>
     );

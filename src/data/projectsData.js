@@ -12,7 +12,7 @@ let projectsData = [
     },
     {
         id: 3,
-        title: "RoboFriends",
+        title: "Monsters Rolodex",
         subTitle: "A Monster Search App",
     }
 ]
