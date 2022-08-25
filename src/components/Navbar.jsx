@@ -20,24 +20,27 @@ function Navbar() {
   return (
     <div className={`fixed px-10 py-5 w-full text-light mx-auto ${color && 'bg-white'} ${color && 'text-black'}`}>
         <nav className='flex justify-between content-center'>
-        <div className='p4 font-bold text-xl'>Logo</div>
+        <div className='p2 md:p4 font-bold text-xl'>Logo</div>
 
         <div className='hidden md:inline text-sm font-bold'>
-            <a className='p-4' href='#skills'>Skills</a>
-            <a className='p-4' href='#projects'>Projects</a>
-            <a className='p-4' href='#contact'>Contact</a>
-            <a className='p-4' href='#about' >About</a>
+            <a className='p-4 text-light' href='#skills'>Skills</a>
+            <a className='p-4 text-light' href='#projects'>Projects</a>
+            <a className='p-4 text-light' href='#contact'>Contact</a>
+            <a className='p-4 text-light' href='#about' >About</a>
         </div>
 
+        {/* `${toggleMenu ? 'block no-scroll h-screen bg-ocean': 'hidden'} m:w-1/3  w-full md:block md:bg-transparent flex flex-col justify-center z-40 absolute top-[-15px] left-0 md:static` */}
+
+        {/* Mobile Menu */}
         <div className='inline md:hidden'>
           <GiHamburgerMenu onClick={()=>{setToggleMenu(!toggleMenu)}}/>
           {toggleMenu &&
-            <div className='flex flex-col z-10 absolute'>
-              <AiFillCloseCircle onClick={()=>{setToggleMenu(false)}} />
-              <a className='p-4' href='#skills'>Skills</a>
-              <a className='p-4' href='#projects'>Projects</a>
-              <a className='p-4' href='#contact'>Contact</a>
-              <a className='p-4' href='#about' >About</a>
+            <div className={`toggleMenu ? no-scroll h-screen bg-ocean w-full left-0 absolute top-[0] flex flex-col items-center justify-around`}>
+              <AiFillCloseCircle onClick={()=>{setToggleMenu(false)}} className='absolute right-5 top-5' />
+              <a className='text-6xl' href='#about' onClick={()=>{setToggleMenu(false)}}>About</a>
+              <a className='text-6xl' href='#skills' onClick={()=>{setToggleMenu(false)}}>Skills</a>
+              <a className='text-6xl' href='#projects' onClick={()=>{setToggleMenu(false)}}>Projects</a>
+              <a className='text-6xl' href='#contact' onClick={()=>{setToggleMenu(false)}}>Contact</a>
             </div>
           }
             
