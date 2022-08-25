@@ -1,9 +1,5 @@
 import React from 'react';
 
-// import "./Modal.css";
-
-
-
 function Modal({closeModal}, props) {
   return (
     <div onClick={()=>{closeModal(false)}}className='fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center'>
