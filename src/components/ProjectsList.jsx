@@ -3,7 +3,6 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import projectsData from '../data/projectsData';
 
-
 function newProjectCard(project){
   return(
     <div>
@@ -20,7 +19,7 @@ function newProjectCard(project){
 
 function ProjectsList() {
   return (
-    <div className='flex flex-wrap space-between'>
+    <div className='flex md:flex-row flex-col justify-between border-solid border-red-600 border-6 w-full'>
         {projectsData.map(newProjectCard)}
     </div>
   )

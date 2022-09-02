@@ -1,4 +1,3 @@
-
 let projectsData = [
     {
         id: 1,
