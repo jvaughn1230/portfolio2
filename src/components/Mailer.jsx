@@ -46,7 +46,7 @@ const Mailer = () => {
     return(
         <div className='w-full'>
             {status && alert()}
-            <form onSubmit={handleSubmit} ref={form} className='flex flex-col w-1/3 mx-auto'>
+            <form onSubmit={handleSubmit} ref={form} className='flex flex-col w-[80%] md:w-1/3 mx-auto'>
                 <input type='text' name='name' value={values.name} onChange={handleChange} placeholder='Full Name' required className='rounded border-slate-500 border-[1px] my-4 leading-10 px-3 py-4' />   
                 <input type='email' name='email' value={values.email} onChange={handleChange} placeholder='Email' required className='rounded border-slate-500 border-[1px] my-4 leading-10 py-4 px-3' />   
                 <textarea name='message' value={values.message} onChange={handleChange} placeholder='Your Message' required className='rounded border-slate-500 border-[1px] my-4 h-24 pt-6 px-3 pb-2' />  
