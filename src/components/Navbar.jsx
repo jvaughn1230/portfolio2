@@ -16,6 +16,8 @@ function Navbar() {
   }
 
   window.addEventListener('scroll', changeColor)
+
+  console.log(color);
   
   return (
     <div className={`fixed px-10 py-5 w-full text-light mx-auto ${color && 'bg-white'} ${color && 'text-black'}`}>
@@ -23,13 +25,11 @@ function Navbar() {
         <div className='p2 md:p4 font-bold text-xl'>Logo</div>
 
         <div className='hidden md:inline text-sm font-bold'>
-            <a className='p-4 text-light' href='#skills'>Skills</a>
-            <a className='p-4 text-light' href='#projects'>Projects</a>
-            <a className='p-4 text-light' href='#contact'>Contact</a>
-            <a className='p-4 text-light' href='#about' >About</a>
+            <a className={`p-4 text-light ${color && 'text-black'} `} href='#skills'>Skills</a>
+            <a className={`p-4 text-light ${color && 'text-black'} `} href='#projects'>Projects</a>
+            <a className={`p-4 text-light ${color && 'text-black'} `} href='#contact'>Contact</a>
+            <a className={`p-4 text-light ${color && 'text-black'} `} href='#about' >About</a>
         </div>
-
-        {/* `${toggleMenu ? 'block no-scroll h-screen bg-ocean': 'hidden'} m:w-1/3  w-full md:block md:bg-transparent flex flex-col justify-center z-40 absolute top-[-15px] left-0 md:static` */}
 
         {/* Mobile Menu */}
         <div className='inline md:hidden'>
