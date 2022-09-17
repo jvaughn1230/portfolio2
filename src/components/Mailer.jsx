@@ -10,6 +10,7 @@ const Mailer = () => {
     })
 
     const [status, setStatus] = useState('');
+    const [viewed, setViewed] = useState(false);
 
     const form = useRef();
     const handleSubmit = (e) => {
@@ -55,6 +56,11 @@ const Mailer = () => {
         </div>
     );
 }
+
+//Need to check if viewed && invalid then show red shadow
+// visited && invalid ? boxshadow etc. 
+//onClick eventHandler. . . Will need to be an outside function since using in 3 spots
+
 
 const alert = () => {
     return(
