@@ -7,7 +7,11 @@ import Projects from './containers/Projects';
 import Contact from './containers/Contact';
 import Footer from './components/Footer';
 
+import { projectsRef } from './utils/firebase.utils';
+
 function App() {
+  console.log(projectsRef);
+  
   return (
     <div>
       <Header />
