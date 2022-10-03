@@ -17,3 +17,6 @@ let projectsData = [
 ]
 
 export default projectsData;
+
+// Need to add an array of Images, Image 0 will be cover for main image
+
